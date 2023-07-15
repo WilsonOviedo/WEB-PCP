@@ -1,0 +1,212 @@
+/* start color's variable 
+------------------------------*/
+:root{
+    --primary: #0F6EFF;
+    --secondary: #FFCC28;    
+}
+.primary{
+    color: var(--primary) !important;
+}
+.secondary{
+    color: var(--secondary) !important;
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+.bg-secondary{
+    background-color: var(--secondary) !important;
+}
+/* end color's variable 
+------------------------------*/
+
+.card-header:first-child {
+    border-radius: .25rem .25rem 0 0;
+}
+.p-3 {
+    padding: 1rem !important;
+}
+.align-items-start {
+    align-items: flex-start !important;
+}
+.flex-column {
+    flex-direction: column !important;
+}
+.border-bottom {
+    border-bottom: 1px solid #cbd5e0 !important;
+}
+.card-footer, .card-header {
+    display: flex;
+    align-items: center;
+}
+.card-header {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 0 solid rgba(0,0,0,.125);
+}
+.card-footer:last-child {
+    border-radius: 0 0 .25rem .25rem;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+.p-3 {
+    padding: 1rem !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.card-footer, .card-header {
+    display: flex;
+    align-items: center;
+}
+.card-footer {
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-top: 0 solid rgba(0,0,0,.125);
+}
+
+.prices-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    /* box-shadow: 0 1px 3px 0 rgba(0,0,0,.1); */
+    transition: all .4s linear;
+}
+
+.prices-card:hover{
+    box-shadow: 0px 0px 30px #85a9e3 !important;
+}
+
+/* ::: vlm styles ::: */
+.prices-section{
+    width: 100%;
+    height: auto;
+    /* background-color: #0F6EFF; */
+    /*background-color: #cbdefc;*/
+    padding: 4em 0em;
+    overflow: hidden;
+}
+
+.prices-small{
+    color: #fff;
+}
+.align-self-start {
+    font-size: medium;
+}
+.price-ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.price-ul li{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 22px;
+    list-style: none;
+    padding: 19px 0px;
+    border-bottom: 1px solid #cbdefc;
+    transition: all .4s linear;
+}
+.price-ul li a{
+    word-break: break-word;
+}
+.price-ul li:hover{
+    background-color: #cbdefc;
+    cursor: context-menu;
+}
+.fa-check{
+    color: #28a745!important;
+}
+.red{
+    color: #dc3545!important;
+}
+.azul{
+    color: #0F6EFF !important;
+}
+.verde{
+    color: #087913 !important;
+}
+.lila{
+    color: #8904A5 !important;
+}
+.amarillo{
+        color: #FFA60F !important;
+}
+.bg-azul{
+    background-color: #ECF0F6 !important;
+}
+.bg-verde{
+    background-color: #F1FFF0 !important;
+}
+.bg-lila{
+    background-color: #FDEEFF !important;
+}
+.bg-amarillo{
+    background-color: #FFFDEE !important;
+}
+.prices-h1 {
+    font-size: 2.5rem !important;
+}
+.prices-h2 {
+    font-size: 1.0rem !important;
+    color: dimgray;
+    text-align: center;
+
+}
+.input-transparente{
+    border : 0px ;
+    width: 20px;
+}
+/* »»» Responsive «««  */
+@media screen and (max-width: 480px) {
+    .prices-h1 {
+        font-size: 1.5rem !important;
+        text-align: center;
+        line-height: 20px;
+    }
+    .prices-h2 {
+        color: dimgray;
+        font-size: 1.0rem !important;
+        text-align: center;
+        line-height: 20px;
+    }
+    .price-ul li{
+        text-align: left;
+    }
+}
+
+/* Tab
+====================*/
+.nav-link{
+    border-radius: 20px 20px 0px 0px !important;
+    padding: 10px 30px !important;
+    /*color: var(--primary) !important;*/
+    transition: all .4s linear;
+}
+.nav-link:hover{
+    background-color: #ffffff75 !important;
+}
+.linea{
+    position: relative;
+}
+.linea::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000%;
+    height: 0.5px;
+    background-color: #dee2e6;
+}
