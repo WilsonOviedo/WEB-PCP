@@ -10,6 +10,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.heading {
+    text-align: center;
+}
+
+.client_logos .single_logo img {
+    max-width: 100%; /* Ajusta el valor del ancho máximo según tus necesidades */
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* start color's variable 
 ------------------------------*/
 :root{
@@ -1775,6 +1786,17 @@ TESTIMONIAL AREA CSS
     margin-top: 5px;
 }
 
+.client_logos {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.single_logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 /*=====================
 FAQ AREA CSS
