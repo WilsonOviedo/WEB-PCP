@@ -1181,6 +1181,9 @@ HEADER AREA CSS
 
 .logo {
     max-width: 245px;
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos dentro del contenedor */
+    justify-content: center;
 }
 
 
