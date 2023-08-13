@@ -1846,8 +1846,8 @@ button.btn.btn-link {
 
 .faq_area button.btn.btn-link:after {
     position: absolute;
-    content: "";
-    font-family: "Font Awesome 5 pro";
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
     right: 0px;
     transition: all 0.3s;
 }
