@@ -19,7 +19,7 @@ html {
     max-width: 100%;
     max-height: 200px;
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 :root {
@@ -1014,7 +1014,9 @@ a.btn5:hover:before {
 
 .main_menu ul li a {
     padding: 40px 13px;
-    color: #fff
+    color: #fff;
+    font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .main_menu ul li ul {
@@ -1084,12 +1086,23 @@ a.btn5:hover:before {
     opacity: 1
 }
 
+.main_menu a:hover {
+    color: #ffcc28;
+  }
+
 .theme-3 .main_menu ul li a {
     color: #1c1b2e
 }
 
 .logo {
     max-width: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.logo_sub_page {
+    max-width: 150px;
     display: flex;
     align-items: center;
     justify-content: center
@@ -1104,6 +1117,7 @@ a.btn5:hover:before {
 }
 
 .title h1 {
+
     font-size: 58px;
     line-height: 70px;
     color: #fff;
@@ -1161,11 +1175,71 @@ img.illas2 {
     bottom: 0
 }
 
+.content {
+    
+    position: relative;
+    bottom: 0
+}
+
+
+
+
+  /**/
+.image img {
+	border-radius: 0.25em;
+	display: block;
+}
+
+.image.left,
+.image.right {
+	max-width: 40%;
+}
+
+.image.left img,
+.image.right img {
+	width: 100%;
+}
+
+.image.left {
+	float: left;
+	margin: 0 1.5em 1em 0;
+	top: 0.25em;
+}
+
+.image.right {
+	float: right;
+	margin: 0 0 1em 1.5em;
+	top: 0.25em;
+}
+
+.image.fit {
+	display: block;
+	margin: 0 0 2em 0;
+	width: 100%;
+}
+
+
+.image.fit img {
+	width: 100%;
+}
+
+.image.main {
+	display: block;
+	margin: 0 0 3em 0;
+	width: 100%;
+}
+
+.image.main img {
+	width: 100%;
+}
+
+
 @media screen and (max-width:767px) {
     .title h1 {
         font-size: 30px;
         line-height: 40px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        margin-top: 60px; /* Agrega 20 píxeles de espacio superior */
     }
 
     .title h6 {
@@ -1700,14 +1774,14 @@ img.shape32 {
 
 .client_logos {
     background-color: #f9f9f9;
-    padding: 50px 0
+    padding: 50px 0;
 }
 
 .single_logo img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto
+    margin: 0 auto;
+    display: inline-block;
 }
 
 button.btn.btn-link.btn-block.text-left {
@@ -1833,6 +1907,24 @@ button.submit_btn.submit_btn2 {
     transition: all .3s
 }
 
+/* Estilos para el carrusel */
+.screen_carousel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilos para cada logo en el carrusel */
+  .single_logo {
+    text-align: center;
+  }
+  
+  .single_logo img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+  }
+  
+  
 .screen_carousel .owl-dots .owl-dot {
     height: 15px;
     width: 15px;
@@ -1960,6 +2052,8 @@ button.submit_btn.submit_btn2 {
 p.footer_pera {
     padding-right: 30px
 }
+
+
 
 @media screen and (max-width:767px) {
     .footer_social {

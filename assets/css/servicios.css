@@ -1,0 +1,62 @@
+/* Image */
+
+.project-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre secciones */
+  }
+  
+  .image {
+    max-width: 80%;
+    height: auto;
+    flex: 1;
+    padding-right: 20px; /* Espacio entre la imagen y la descripción */
+    overflow: hidden; /* Recorta el excedente */
+  }
+
+  
+  .description {
+    flex: 2;
+  }
+  
+  .button_servicios {
+    background-color: #ffcc28;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .button_servicios:hover {
+    background-color: #ffcd2868;
+  }
+
+  /*Titulos*/
+  .title2 {
+    text-align: center
+}
+
+.title2 h2 {
+    font-size: 40px;
+    line-height: 50px
+}
+
+
+@media screen and (max-width: 767px) {
+  .project-section {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    padding-right: 0; /* Eliminar espacio entre imagen y descripción */
+    margin-bottom: 10px; /* Agregar espacio entre imagen y descripción */
+  }
+
+  .description {
+    flex: none; /* Deshabilitar crecimiento de la descripción */
+    width: 100%; /* Ocupar todo el ancho en disposición vertical */
+  }
+}
