@@ -987,7 +987,7 @@ a.btn5:hover:before {
     top: 0;
     left: 0;
     z-index: 99;
-    background: #f6f9fc;
+    background: #000000;
     transition: all .3s
 }
 
@@ -1095,7 +1095,7 @@ a.btn5:hover:before {
 }
 
 .logo {
-    max-width: 245px;
+    max-width: 100px;
     display: flex;
     align-items: center;
     justify-content: center

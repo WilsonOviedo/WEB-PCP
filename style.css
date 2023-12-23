@@ -43,3 +43,53 @@
     font-size: 16px;
     margin-left: 5px
 }
+/*ddddddddd*/
+/*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+  /*}*/
+  
+  .clientes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-gap: 20px; /* Espacio entre logos */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+  }
+  
+  
+  /* Estilos de los logos de clientes */
+.logoClientes {
+    display: inline-block;
+    margin: 10px;
+    filter: grayscale(50%); /* Imágenes en escala de grises por defecto */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .logoClientes img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según lo necesites */
+    height: auto;
+  }
+  
+  /* Efecto de cambio a colores originales al pasar el mouse */
+  .logoClientes:hover {
+    filter: grayscale(0%); /* Quita el efecto de escala de grises al pasar el mouse */
+  }
+  
+  header {
+    position: fixed; /* Fija el encabezado */
+    top: 0; /* Lo coloca arriba */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100px;
+    background-color: #000000; /* Color de fondo del encabezado */
+    padding: 5px 10px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+
+  /* Ajusta el contenido para evitar que quede oculto bajo el encabezado */
+main {
+    padding-top: 100px; /* Ajusta el espacio para el encabezado */
+  }
