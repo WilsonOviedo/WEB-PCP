@@ -58,15 +58,19 @@
     padding: 20px;
     max-width: 1200px; /* Ancho máximo */
     margin: 0 auto; /* Centrar en la página */
+    
   }
   
   
   /* Estilos de los logos de clientes */
 .logoClientes {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     filter: grayscale(50%); /* Imágenes en escala de grises por defecto */
     transition: filter 0.3s ease-in-out;
+    
   }
   
   .logoClientes img {
@@ -87,9 +91,174 @@
     background-color: #000000; /* Color de fondo del encabezado */
     padding: 5px 10px; /* Espaciado interno */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: height 0.3s; /* Agrega una transición suave al cambio de altura */
   }
 
   /* Ajusta el contenido para evitar que quede oculto bajo el encabezado */
 main {
     padding-top: 100px; /* Ajusta el espacio para el encabezado */
   }
+
+/* Estilos para el carrusel */
+.swiper-container {
+  width: 100%;
+  height: 600px; /* Ajusta la altura del carrusel según lo necesites */
+}
+
+.swiper-slide {
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.slide-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.slide-content {
+  text-align: left; /* Alinea el texto a la izquierda */
+  color: white;
+  padding: 20px; /* Ajusta el espaciado del contenido */
+}
+
+.slide-title {
+  font-size: 36px; /* Ajusta el tamaño del título según sea necesario */
+  margin-bottom: 10px; /* Espacio entre el título y el texto */
+}
+
+.slide-text {
+  font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide-background {
+  position: relative;
+}
+
+.slide-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* Color de texto claro */
+  text-align: left;
+  padding: 20px;
+}
+
+.white_con {
+  /* Estilos para el texto, por ejemplo: */
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.titulo-slider {
+   /* Estilos para el texto, por ejemplo: */
+   font-size: 24px;
+   line-height: 1.5;
+   font-family: 'Cambria';
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff
+}
+
+/*Estilos para productos*/
+
+.container2 {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+
+.left-section h2 {
+  margin-bottom: 10px;
+}
+
+.left-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.right-section {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.item {
+  flex: 1;
+  min-width: calc(33.33% - 20px); /* Ancho mínimo de cada columna */
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.item img {
+  width: 100%;
+  height: 200px; /* Establece la altura deseada */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  .item {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+  }
+}
