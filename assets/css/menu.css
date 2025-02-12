@@ -1,0 +1,68 @@
+/* Estilos generales del menú */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--black);
+}
+
+.logo img {
+    height: 60px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.nav-menu a:hover {
+    color: var(--yellow);
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* Estilos del botón de menú (ícono de hamburguesa) */
+.menu-btn {
+    display: none; /* Oculto por defecto en desktop */
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Mostrar el ícono en móviles */
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px; /* Ajusta según la altura de tu header */
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        transform: translateX(100%); /* Oculta el menú fuera de la pantalla */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0); /* Muestra el menú */
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+    }
+}
