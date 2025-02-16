@@ -21,15 +21,17 @@
 .nav-menu a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 20px;
+    margin-left: 200px;
+    font-weight: bold;
+    
 }
 
 .nav-menu a:hover {
     color: var(--yellow);
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
 /* Estilos del botón de menú (ícono de hamburguesa) */

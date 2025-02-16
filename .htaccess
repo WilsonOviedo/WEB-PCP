@@ -1,4 +1,3 @@
-RewriteEngine On
-RewriteRule ^servicios$ servicios.html [NC,L]
-RewriteRule ^creditos$ creditos.html [NC,L]
-RewriteRule ^condiciones$ TerminosCondiciones.html [NC,L]
+location /inicio {
+    rewrite ^/inicio$ /index.html break;
+}

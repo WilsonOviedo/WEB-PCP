@@ -32,26 +32,41 @@
 }
 
 /* Header y Navegación */
+/* Estilos originales del header */
 header {
     background-color: var(--black);
     padding: 1rem;
     position: fixed;
-    top: 0; /* Fijarlo en la parte superior */
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.1s ease; /* Agrega una transición suave */
 }
 
+/* Estilos cuando el header está reducido */
+header.shrink {
+    transform: scaleY(0.8); /* Reduce la altura y el contenido al 80% */
+    transform-origin: top; /* Asegura que la transformación se aplique desde la parte superior */
+    padding: 0.5rem; /* Ajusta el padding para que no se vea demasiado comprimido */
+}
+
+/* Estilos para el contenedor del logo */
+.logo img {
+    transition: transform 0.3s ease; /* Agrega una transición suave para la imagen */
+}
+
+/* Escala la imagen del logo cuando el header está reducido */
+header.shrink .logo img {
+    transform: scale(0.8); /* Reduce la imagen al 80% */
+}
 
 /* Asegurarse de que el espacio debajo del header fijo sea negro */
 body {
     padding-top: 100px; /* Ajustado para el nuevo tamaño del logo */
     background-color: var(--black);
 }
-
-
-
 
 /* Services Section */
 .services {
@@ -65,6 +80,14 @@ body {
     margin-bottom: 0.5rem;
     margin-top: 0rem;
     color: var(--black);
+}
+
+.trabajos-section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: var(--white);
 }
 
 .services-grid {
@@ -93,9 +116,33 @@ body {
     font-size: 2.5rem;
     color: var(--yellow);
     margin-bottom: 1rem;
+}  
+/*Boton ir a galeria*/
+
+/* Estilos para el botón con la clase "button-to-gallery" */
+.button-to-gallery {
+    display: block; /* Hace que el botón sea un bloque para poder centrarlo */
+    margin: 20px auto; /* Centra el botón horizontalmente y agrega espacio arriba y abajo */
+    padding: 10px 20px; /* Espaciado interno para que el botón sea más grande */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: var(--black); /* Color del texto */
+    background-color: var(--yellow); /* Color de fondo del botón (azul) */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
 }
 
+/* Efecto hover para el botón con la clase "button-to-gallery" */
+.button-to-gallery:hover {
+    background-color: #878d0e; /* Cambia el color de fondo al pasar el cursor */
+}
 
+/* Efecto cuando el botón con la clase "button-to-gallery" está activo (al hacer clic) */
+.button-to-gallery:active {
+    background-color: #878d0e; /* Cambia el color de fondo al hacer clic */
+}
 
 
 /* Contenedor general del carrusel */
@@ -103,7 +150,7 @@ body {
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajusta según tus necesidades */
+    max-width: 1200px; /* Ajusta según tus necesidades */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -209,8 +256,8 @@ body {
     max-width: 100%;
     margin: 0 auto;
     background-color: var(--white);
-    padding-left: 10rem; 
-    padding-right: 10rem; 
+    padding-left: 15rem; 
+    padding-right: 15rem; 
 }
 
 .clients-grid-title {
@@ -292,13 +339,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Footer */
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem 1rem;
-    text-align: center;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

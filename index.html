@@ -33,8 +33,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCP-Soluciones para la industria</title>
-    <meta name="description" content="Toma el control de tus recursos: Gestiona tu consumo 
-    eléctrico y de otros recursos con medidores inteligentes y genera ahorros en tus facturas.">
+    <meta name="description" 
+        content="Conoce nuestros servicios de automatización industrial, industria 4.0, telemetría de medidores industriales,
+        gestión de recursos energéticos, materiales para industria, desarrollo de sensores industriales y servicios navales..">
+    <meta name="keywords"
+        content="servicio eléctrico, servicio electromecánico, mantenimiento industrial, mantenimiento de barcazas, automatización industrial, sensores industriales,
+        telemetría de medidores eléctricos, telemetría, central de monitoreo."
+        >
+    
+    <link rel="canonical" href="https://www.pcp.com.py/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Power Control Paraguay &bull; Empresa de servicios industriales y telemedición."/>
+	<meta property="og:description" content="Servicios integrales en telemedición y monitoreo para condominios y empresas - Smart Metering - Servicios Industriales - Empresa de servicios paraguaya" />
+	<meta property="og:url" content="https://www.pcp.com.py/" />
+	<meta property="og:site_name" content="Power Control Paraguay" />
+	<meta property="article:publisher" content="https://www.facebook.com/pcppy" />
     
     <link rel="icon" href="assets/img/logo/isotipo-pcp-negro-ico.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -43,6 +57,7 @@
     <link rel="stylesheet" href="assets/css/servicios.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/sobre-nosotros.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
 <body>
@@ -54,6 +69,7 @@
             <nav class="nav-menu" id="nav-menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#servicios">Servicios</a>
+                <a href="galeria.html">Galería</a>
                 <a href="#trabajos">Trabajos</a>
                 <a href="#clientes">Clientes</a>
             </nav>
@@ -95,7 +111,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="nosotros">
         <!-- Columna 1: Visión -->
         <div class="column">
             <div class="icon">
@@ -167,7 +183,7 @@
         </div>
     </section>
 
-    <section class="servicios">
+    <section class="servicios" >
         <!-- Columna izquierda -->
         <div class="servicios-titulo">
             <h2>Nuestras<br><span>Soluciones</span></h2>
@@ -195,22 +211,28 @@
                 <h3>Accionamiento y control</h3>
                 <p>Diseñamos, fabricamos e instalamos tableros de control de motores y tableros automatizados a medida. Optimizamos tu producción con sistemas 
                     seguros y eficientes. Más control, menos fallas. Confíanos tu proyecto y llevá tu industria al siguiente nivel. </p>
-            </div>
-    
-            
-            <div class="servicio">
-                <img src="assets/img/servicios/camaras_termograficas.jpg" loading="lazy" alt="Servicio 2">
-                <h3>Mantenimientos eléctricos</h3>
-                <p>Evitá paradas imprevistas con nuestro mantenimiento eléctrico industrial. Revisamos, prevenimos y corregimos fallas en tableros, 
-                    motores y sistemas de control, asegurando operación continua y segura. Más producción, menos problemas. ¡Consultanos! </p>
-            </div>
-    
+            </div>    
             
             <div class="servicio">
                 <img src="assets/img/servicios/medidores.jpg" loading="lazy" alt="Servicio 3">
                 <h3>Monitoreo de medidores industriales</h3>
                 <p>Optimizá costos y evitá sorpresas en tu factura con nuestro monitoreo de medidores eléctricos para industrias y edificios. Controlá el consumo 
                     en tiempo real, detectá anomalías y mejorá la eficiencia energética. Más control, menos gastos. ¡Consultanos!</p>
+            </div>
+
+            <div class="servicio">
+                <img src="assets/img/servicios/arenero.png" loading="lazy" alt="Servicio 3">
+                <h3>Servicios navales</h3>
+                <p>Brindamos servicios eléctricos navales para embarcaciones e industrias marítimas. Instalamos, reparamos y 
+                    optimizamos sistemas eléctricos, asegurando seguridad y eficiencia en cada viaje. 
+                    Más confiabilidad, menos fallas. ¡Consultanos y navegá sin preocupaciones! </p>
+            </div>
+
+            <div class="servicio">
+                <img src="assets/img/servicios/camaras_termograficas.jpg" loading="lazy" alt="Servicio 2">
+                <h3>Mantenimientos eléctricos</h3>
+                <p>Evitá paradas imprevistas con nuestro mantenimiento eléctrico industrial. Revisamos, prevenimos y corregimos fallas en tableros, 
+                    motores y sistemas de control, asegurando operación continua y segura. Más producción, menos problemas. ¡Consultanos! </p>
             </div>
     
            
@@ -219,7 +241,7 @@
     </section>   
 
     <section class="carousel" id="trabajos">
-        <h2 class="section-title">Nuestros Trabajos</h2>
+        <h2 class="trabajos-section-title">ALGUNOS DE NUESTROS TRABAJOS</h2>
         <div class="carousel-container">
             <div class="carousel-track">
                 <!-- Imágenes originales -->
@@ -257,13 +279,14 @@
             </div>
             <button class="carousel-btn prev-btn">❮</button>
             <button class="carousel-btn next-btn">❯</button>
+            <button class="button-to-gallery" onclick="window.location.href='galeria.html'">Visitar la galería</button>
         </div>
     </section>    
 
     <section class="carousel" id="clientes">
         <div class="clients-grid-title">
             <br>
-            <h2 >Algunas marcas que <span> confían en nosotros</span></h2>
+            <h2 >ALGUNAS MARCAS QUE <span> CONFÍAN EN NOSOTROS</span></h2>
         </div>
        
         <div class="clients-grid">
@@ -288,8 +311,13 @@
             </div>
             <div class="client-logo">
                 <img src="assets/img/client_logo/6.svg" alt="Plastech">
-            </div>        
-            
+            </div>  
+            <div class="client-logo">
+                <img src="assets/img/client_logo/iapp.png" alt="IAPP">
+            </div>  
+            <div class="client-logo">
+                <img src="assets/img/client_logo/sc-hierros.png" alt="SC Hierros">
+            </div>  
             <div class="client-logo">
                 <img src="assets/img/client_logo/rotesma.svg" alt="Rotesma">
             </div>
@@ -318,13 +346,48 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <footer>
-        <p>© 2025 Power Control Paraguay. Todos los derechos reservados.</p>
-        <p>Desarrollado por: Equipo de desarrollo WEB Power Control Paraguay.</p>
+    <footer class="footer">
+        <div class="footer-container" id="contacto">
+            <!-- Columna 1: Información de contacto -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Dirección</h4>
+
+                <p><i class="fa fa-map-marker-alt"></i>Avda. República del Bolivia, Ciudad del este, Paraguay.</p>
+                <p><i class="fa fa-phone-alt"></i>(+595 973) 623 941</p>
+                <p><i class="fa fa-phone-alt"></i>(+595 974) 126 305</p>
+                <p><i class="fa fa-envelope"></i>pcp@pcp.com.py</p>
+            </div>
+    
+            <!-- Columna 2: Mapa -->
+            <div class="footer-column map-section">
+                <h4 class="footer-title">Ubicación</h4>
+                <div class="footer-map">
+        
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy" 
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+    
+            <!-- Columna 3: Enlaces rápidos -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Enlaces rápidos</h4>
+                <a class="footer-link" href="#nosotros">Nosotros</a>
+                <a class="footer-link" href="#contacto">Contactános</a>
+                <a class="footer-link" href="galeria.html">Galería</a>
+            </div>
+        </div>
+    
+        <!-- Pie de página -->
+        <div class="footer-bottom">
+            <p>© 2025 Power Control Paraguay. Todos los derechos reservados.</p>
+            <p>Desarrollado por: Equipo de desarrollo WEB Power Control Paraguay.</p>
+        </div>
     </footer>
 
     <script src="assets/js/script-carrusel.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/hero.js"></script>
+    <script src="assets/js/header.js"></script>
 </body>
 </html>
