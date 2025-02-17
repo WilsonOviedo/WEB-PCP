@@ -1,3 +1,6 @@
+/*Animacion Menu*/
+
+
 /* Estilos generales del menú */
 .nav-container {
     display: flex;
@@ -29,9 +32,7 @@
 
 .nav-menu a:hover {
     color: var(--yellow);
-    text-decoration: none;
     font-size: 20px;
-    margin-left: 200px;
 }
 
 /* Estilos del botón de menú (ícono de hamburguesa) */
