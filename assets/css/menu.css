@@ -6,67 +6,103 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    background-color: #14080e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    flex: 0 0 auto;
 }
 
 .logo img {
-    height: 60px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 50px;
+    width: auto;
 }
 
 .nav-menu {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex: 1;
+    margin: 0 2rem;
 }
 
 .nav-menu a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
-    margin-left: 200px;
-    font-weight: bold;
-    
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.nav-menu a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -1rem;
+    color: #ffffff;
+    opacity: 0.5;
 }
 
 .nav-menu a:hover {
-    color: var(--yellow);
-    font-size: 20px;
+    color: #f7df00;
 }
 
 /* Estilos del botón de menú (ícono de hamburguesa) */
 .menu-btn {
-    display: none; /* Oculto por defecto en desktop */
+    display: none;
+    color: #ffffff;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: white;
-    font-size: 24px;
 }
 
-/* Estilos para móviles */
-@media (max-width: 768px) {
-    .menu-btn {
-        display: block; /* Mostrar el ícono en móviles */
-    }
-
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
     .nav-menu {
-        position: absolute;
-        top: 70px; /* Ajusta según la altura de tu header */
-        right: 0;
-        background-color: #333;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        transform: translateX(100%); /* Oculta el menú fuera de la pantalla */
-        transition: transform 0.3s ease-in-out;
+        gap: 1.5rem;
     }
-
-    .nav-menu.active {
-        transform: translateX(0); /* Muestra el menú */
-    }
-
+    
     .nav-menu a {
-        margin: 10px 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #14080e;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+        margin: 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    
+    .logo img {
+        height: 40px;
     }
 }

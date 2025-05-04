@@ -34,8 +34,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.67">
     <title>PCP-Soluciones para la industria</title>
     <meta name="description" 
-        content="Conoce nuestros servicios de automatización industrial, industria 4.0, telemetría de medidores industriales,
-        gestión de recursos energéticos, materiales para industria, desarrollo de sensores industriales y servicios navales..">
+        content="Somos una empresa paraguaya que ofrece servicios de automatización industrial, industria 4.0, telemetría de medidores industriales,
+        gestión de recursos energéticos, materiales para industria, desarrollo de sensores industriales y servicios navales.">
     <meta name="keywords"
         content="servicio eléctrico, servicio electromecánico, mantenimiento industrial, mantenimiento de barcazas, automatización industrial, sensores industriales,
         telemetría de medidores eléctricos, telemetría, central de monitoreo."
@@ -84,30 +84,40 @@
         <div class="hero-slides">
             <!-- Slide 1 -->
             <div class="slide active">
-                <img  src="assets/img/hero/IMG_20231125_082825.jpg" loading="lazy" alt="Imagen 1">
+                <img src="assets/img/hero/hero1.jpg" loading="lazy" alt="Imagen 1">
                 <div class="slide-content">
-                    <h1>Power Control Paraguay</h1>
-                    <p>Soluciones electromecánicas e industriales de alta calidad y tecnología.</p>
+                    <h1>Telemetría de medidores y sensores industriales</h1>
+                    <p>Recolección, monitoreo de datos y acciones de manera remota, generar 
+                        reportes y alertas para optimizar procesos y reducir costos.</p>
                 </div>
-            </div>
+            </div>            
     
             <!-- Slide 2 -->
             <div class="slide">
-                <img src="assets/img/hero/IMG_20240702_155311.jpg" loading="lazy" alt="Imagen 2">
+                <img  src="assets/img/hero/hero2.jpg" loading="lazy" alt="Imagen 2">
                 <div class="slide-content">
-                    <h1>Innovación y tecnología</h1>
-                    <p>No somos instaladores de soluciones, nosotros creamos las soluciones.</p>
+                    <h1>Automatizacion Industrial</h1>
+                    <p>Transforma tus procesos industriales con tecnología avanzada y automatización.</p>
                 </div>
             </div>
     
             <!-- Slide 3 -->
             <div class="slide">
-                <img src="assets/img/hero/IMG_20240918_130725.jpg" loading="lazy" alt="Imagen 3">
+                <img src="assets/img/hero/hero4.jpg" loading="lazy" alt="Imagen 3">
                 <div class="slide-content">
-                    <h1>Servicios personalizados</h1>
-                    <p>Adaptamos nuestras soluciones a tus necesidades</p>
+                    <h1>Sistemas Scada y control de procesos.</h1>
+                    <p>Soluciones en sistemas Scada para control de procesos de manera automatizada.</p>
                 </div>
             </div>
+        </div>
+        <!-- Botones de navegación -->
+        <button class="hero-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <!-- Indicadores de posición -->
+        <div class="hero-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
         </div>
     </section>
 
@@ -187,7 +197,7 @@
     <section class="servicios" >
         <!-- Columna izquierda -->
         <div class="servicios-titulo">
-            <h2>Nuestras<br><span>Soluciones</span></h2>
+            <h2>Nuestras<br><span style="color: #f7df00;">Soluciones</span></h2>
         </div>
     
         <!-- Columna derecha (grid de servicios) -->
@@ -289,7 +299,7 @@
     <section class="carousel" id="clientes">
         <div class="clients-grid-title">
             <br>
-            <h2 >ALGUNAS MARCAS QUE <span> CONFÍAN EN NOSOTROS</span></h2>
+            <h2 >ALGUNAS MARCAS QUE <span style="color: #f7df00;"> CONFÍAN EN NOSOTROS</span></h2>
         </div>
        
         <div class="clients-grid">
@@ -382,10 +392,9 @@
                 'Accept': 'application/json'
             }
         });
-        // Dispara el evento de Meta Pixel
-        if (typeof fbq === "function") {
+     
             fbq('track', 'Lead');
-        }
+        
         form.style.display = 'none';
         document.getElementById('mensaje-exito').style.display = 'block';
     });
@@ -404,7 +413,7 @@
                 <p><i class="fa fa-map-marker-alt"></i>Avda. República del Bolivia, Ciudad del este, Paraguay.</p>
                 <p><i class="fa fa-phone-alt"></i>(+595 973) 623 941</p>
                 <p><i class="fa fa-phone-alt"></i>(+595 974) 126 305</p>
-                <p><i class="fa fa-envelope"></i>pcp@pcp.com.py</p>
+                <p><i class="fa fa-envelope"></i><a href="mailto:pcp@pcp.com.py" style="color: #ffffff;">pcp@pcp.com.py</a></p>
             </div>
     
             <!-- Columna 2: Mapa -->
@@ -430,7 +439,7 @@
         <!-- Pie de página -->
         <div class="footer-bottom">
             <p>© 2025 Power Control Paraguay. Todos los derechos reservados.</p>
-            <p>Desarrollado por: Equipo de desarrollo WEB Power Control Paraguay.</p>
+            <p>Desarrollado por: Equipo de desarrollo Power Control Paraguay.</p>
         </div>
     </footer>
 
@@ -438,5 +447,14 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/hero.js"></script>
     <script src="assets/js/header.js"></script>
+    <script>
+        // Verificar si es la primera visita
+        if (!localStorage.getItem('hasVisited')) {
+            // Ajustar el zoom al 75%
+            document.body.style.zoom = "75%";
+            // Marcar que ya ha visitado el sitio
+            localStorage.setItem('hasVisited', 'true');
+        }
+    </script>
 </body>
 </html>
