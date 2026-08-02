@@ -36,6 +36,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.pcp.com.py/blog/automatizacion-linea-yerba-mate-compuesta</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pcp.com.py/blog/fabrica-tableros-electricos-paraguay</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.pcp.com.py/blog/integrador-plc-alto-parana</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
