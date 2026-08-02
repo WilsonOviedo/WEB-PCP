@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const originalSlides = Array.from(track.querySelectorAll(".client-slide"));
     if (originalSlides.length === 0) return;
 
-    const getVisibleSlides = () => (window.innerWidth <= 768 ? 2 : 4);
+    const getVisibleSlides = () => {
+        if (window.innerWidth <= 768) return 2;
+        if (window.innerWidth <= 1024) return 4;
+        return 6;
+    };
     const total = originalSlides.length;
 
     let visible = getVisibleSlides();
