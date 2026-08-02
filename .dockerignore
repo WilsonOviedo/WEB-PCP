@@ -1,4 +1,7 @@
 .git
-.cache
+.gitignore
 Dockerfile
 .dockerignore
+*.md
+.cursor
+agent-transcripts

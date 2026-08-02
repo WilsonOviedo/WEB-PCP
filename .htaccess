@@ -1,3 +1,11 @@
-location /inicio {
-    rewrite ^/inicio$ /index.html break;
-}
+RewriteEngine On
+
+# URL amigable /inicio -> home
+RewriteRule ^inicio/?$ index.html [L]
+
+# Cabecera X-Robots-Tag para páginas HTML (Apache + mod_headers)
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set X-Robots-Tag "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    </FilesMatch>
+</IfModule>

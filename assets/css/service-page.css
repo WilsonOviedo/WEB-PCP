@@ -1,0 +1,104 @@
+.service-page {
+    padding: 6rem 1.5rem 4rem;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #e8e8e8;
+}
+
+.service-page-hero {
+    margin-bottom: 2.5rem;
+}
+
+.service-page-hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.4rem);
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+.service-page-hero .lead {
+    font-size: 1.1rem;
+    color: #cfcfcf;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.service-breadcrumb {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.service-breadcrumb a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.service-page h2 {
+    color: var(--white);
+    font-size: 1.35rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.service-page p,
+.service-page li {
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+.service-page ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.service-page ul li {
+    margin-bottom: 0.4rem;
+}
+
+.service-page ul li::marker {
+    color: var(--yellow);
+}
+
+.service-local-note {
+    background: #111;
+    border: 1px solid rgba(247, 223, 0, 0.25);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+}
+
+.service-local-note strong {
+    color: var(--yellow);
+}
+
+.service-cta {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.service-cta .btn {
+    display: inline-block;
+}
+
+.service-related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+}
+
+.service-related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.service-related-links a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.service-related-links a:hover {
+    text-decoration: underline;
+}
