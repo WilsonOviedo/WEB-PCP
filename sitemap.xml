@@ -1,62 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.pcp.com.py/</loc>
+    <loc>https://pcp.com.py/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/automatizacion</loc>
+    <loc>https://pcp.com.py/automatizacion-industrial</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/telemetria</loc>
+    <loc>https://pcp.com.py/programacion-plc-hmi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/proyectos-electricos</loc>
+    <loc>https://pcp.com.py/sistemas-scada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pcp.com.py/telemetria-industrial</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/mantenimiento-industrial</loc>
+    <loc>https://pcp.com.py/proyectos-electricos-industriales</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/galeria</loc>
+    <loc>https://pcp.com.py/tableros-electricos-industriales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pcp.com.py/mantenimiento-electrico-industrial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pcp.com.py/galeria</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog</loc>
+    <loc>https://pcp.com.py/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog/automatizacion-linea-yerba-mate-compuesta</loc>
+    <loc>https://pcp.com.py/blog/automatizacion-linea-yerba-mate-compuesta</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog/fabrica-tableros-electricos-paraguay</loc>
+    <loc>https://pcp.com.py/blog/fabrica-tableros-electricos-paraguay</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog/integrador-plc-alto-parana</loc>
+    <loc>https://pcp.com.py/blog/integrador-plc-alto-parana</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog/scada-paraguay-supervision-industrial</loc>
+    <loc>https://pcp.com.py/blog/scada-paraguay-supervision-industrial</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.pcp.com.py/blog/telemetria-industrial-alto-parana</loc>
+    <loc>https://pcp.com.py/blog/telemetria-industrial-alto-parana</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

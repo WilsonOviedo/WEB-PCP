@@ -102,3 +102,40 @@
 .service-related-links a:hover {
     text-decoration: underline;
 }
+
+.service-page a:not(.btn):not(.service-related-links a):not(.service-breadcrumb a) {
+    color: var(--yellow);
+}
+
+.service-figure {
+    margin: 1.5rem 0 2rem;
+}
+
+.service-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.service-figure figcaption {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.service-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.service-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
