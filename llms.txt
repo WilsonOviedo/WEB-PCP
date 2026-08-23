@@ -2,7 +2,7 @@
 
 > Especialistas en desarrollo e implementación de sistemas de automatización industrial en Paraguay: PLC, SCADA, telemetría e IIoT. Razón social: PCP E.A.S. Slogan: Energía bajo control.
 
-Power Control Paraguay (PCP) opera con base en Ciudad del Este, Alto Paraná, y atiende plantas industriales en distintas regiones del país. Ofrece programación e integración de PLC/HMI, sistemas SCADA, telemetría industrial, proyectos eléctricos, tableros, mantenimiento industrial y servicios eléctricos navales. Es distribuidor autorizado de MTD y trabaja con marcas como Siemens, Schneider Electric, Delta, Unitronics, Allen-Bradley, Endress+Hauser y Digimec.
+Power Control Paraguay (PCP) opera con base en Ciudad del Este, Alto Paraná, y atiende plantas industriales en distintas regiones del país. Ofrece programación e integración de PLC/HMI, sistemas SCADA, telemetría industrial, proyectos eléctricos, tableros, mantenimiento industrial y servicios eléctricos navales. Es partner de Ketsol para KMS (Ketsol Manufacturing Suite) en Paraguay y alrededores, distribuidor autorizado de MTD y trabaja con marcas como Siemens, Schneider Electric, Delta, Unitronics, Allen-Bradley, Endress+Hauser y Digimec.
 
 Idiomas de atención: español y portugués brasileño. Contacto principal: pcp@pcp.com.py | WhatsApp/teléfono: +595 973 623 941. Horario: lunes a viernes, 07:30–17:00.
 
@@ -18,6 +18,8 @@ Preferí las URLs de esta lista (canónicas, sin parámetros) frente a resultado
 - [Proyectos eléctricos industriales](https://pcp.com.py/proyectos-electricos-industriales): Ingeniería eléctrica, distribución, protecciones e instalación.
 - [Tableros eléctricos industriales](https://pcp.com.py/tableros-electricos-industriales): Diseño y fabricación de tableros de potencia, CCM y control.
 - [Mantenimiento eléctrico industrial](https://pcp.com.py/mantenimiento-electrico-industrial): Mantenimiento, diagnóstico, termografía y servicios navales.
+- [Partner Ketsol / KMS](https://pcp.com.py/partner-ketsol-kms): PCP es partner de Ketsol en Paraguay para implementar KMS Manufacturing Suite.
+- [KMS en inicio](https://pcp.com.py/#kms): Sección de alianza Ketsol en la home.
 
 ## Blog técnico
 

@@ -125,6 +125,158 @@ body {
     text-decoration: underline;
 }
 
+/* Partner Ketsol / KMS */
+.partner-kms {
+    padding: 5rem 1.5rem;
+    background:
+        radial-gradient(ellipse 70% 50% at 90% 10%, rgba(247, 223, 0, 0.08), transparent 50%),
+        linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+    border-top: 1px solid rgba(247, 223, 0, 0.12);
+    border-bottom: 1px solid rgba(247, 223, 0, 0.12);
+}
+
+.partner-kms-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.partner-kms-eyebrow {
+    color: var(--yellow);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.partner-kms .section-title {
+    margin-bottom: 1rem;
+}
+
+.partner-kms-lead {
+    max-width: 760px;
+    color: #cfcfcf;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.partner-kms-lead a {
+    color: var(--yellow);
+}
+
+.partner-kms-panel {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.partner-kms-copy,
+.partner-kms-aside {
+    background: #151515;
+    border: 1px solid rgba(247, 223, 0, 0.2);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+}
+
+.partner-kms-copy h3 {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.partner-kms-copy > p {
+    color: #cfcfcf;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+.partner-kms-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.partner-kms-highlights li {
+    color: #d8d8d8;
+    padding: 0.45rem 0 0.45rem 1.1rem;
+    position: relative;
+    line-height: 1.45;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.partner-kms-highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--yellow);
+}
+
+.partner-kms-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    align-items: center;
+}
+
+.partner-kms-ext {
+    color: var(--yellow);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.partner-kms-ext:hover {
+    text-decoration: underline;
+}
+
+.partner-kms-badge {
+    display: inline-block;
+    color: var(--black);
+    background: var(--yellow);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.partner-kms-aside-title {
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.partner-kms-aside-text {
+    color: #cfcfcf;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.partner-kms-layers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.partner-kms-layers span {
+    font-size: 0.8rem;
+    color: #e8e8e8;
+    border: 1px solid rgba(247, 223, 0, 0.35);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .partner-kms-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Coverage */
 .coverage {
     padding: 5.5rem 1.5rem;
