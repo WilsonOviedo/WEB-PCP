@@ -93,8 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener("resize", () => {
-        rebuildForResponsive();
-        startAutoplay();
+        clearTimeout(window.__clientsResizeTimer);
+        window.__clientsResizeTimer = setTimeout(() => {
+            rebuildForResponsive();
+            startAutoplay();
+        }, 150);
     });
 
     updateCarousel(false);

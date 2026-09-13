@@ -34,6 +34,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="geo.region" content="PY-10">
     <meta name="geo.placename" content="Ciudad del Este">
     <link rel="canonical" href="https://pcp.com.py/sistemas-scada" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <meta property="og:locale" content="es_PY" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sistemas SCADA en Paraguay | PCP"/>
@@ -71,7 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 
     <link rel="icon" href="assets/img/logo/isotipo-pcp-negro-ico.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -86,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header>
         <div class="nav-container">
             <div class="logo">
-                <a href="/"><img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay"></a>
+                <a href="/"><img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay" width="500" height="125" decoding="async"></a>
             </div>
             <nav class="nav-menu" id="nav-menu">
                 <a href="/">Inicio</a>
@@ -179,9 +181,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="footer-column map-section">
                 <h4 class="footer-title">Ubicación</h4>
                 <div class="footer-map">
-                    <iframe title="Mapa Power Control Paraguay"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy"
-                        width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-facade map-facade--footer" role="button" tabindex="0"
+                        aria-label="Cargar mapa de ubicación"
+                        data-map-title="Mapa Power Control Paraguay"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy">
+                        <span class="map-facade-label">Ver mapa</span>
+                    </div>
                 </div>
             </div>
             <div class="footer-column quick-links">
@@ -203,8 +208,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
 
     <a href="https://wa.me/595973623941" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/analytics-events.js"></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/map-facade.js" defer></script>
+    <script src="assets/js/analytics-events.js" defer></script>
 </body>
 </html>

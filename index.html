@@ -45,7 +45,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="ICBM" content="-25.485882, -54.650260">
     
     <link rel="canonical" href="https://pcp.com.py/" />
-    <link rel="preload" as="image" href="assets/img/hero/hero5.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="preload" as="image"
+          href="assets/img/hero/hero5-w1280.avif"
+          imagesrcset="assets/img/hero/hero5-w768.avif 768w, assets/img/hero/hero5-w1280.avif 1280w, assets/img/hero/hero5-w1920.avif 1920w"
+          imagesizes="100vw"
+          type="image/avif"
+          fetchpriority="high">
 	<meta property="og:locale" content="es_PY" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Automatización Industrial e Ingeniería Eléctrica en Paraguay | PCP"/>
@@ -303,7 +312,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     
     <link rel="icon" href="assets/img/logo/isotipo-pcp-negro-ico.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/servicios.css">
@@ -322,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay Logo">
+                <img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay Logo" width="500" height="125" decoding="async">
             </div>
             <nav class="nav-menu" id="nav-menu">
                 <a href="#inicio">Inicio</a>
@@ -343,7 +352,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
         <div class="hero-background">
-            <img class="hero-bg-slide active" src="assets/img/hero/hero5.webp" fetchpriority="high" decoding="async" width="1920" height="1080" alt="Tableros CCM modulares industriales fabricados por Power Control Paraguay">
+            <picture class="hero-bg-slide active">
+                <source type="image/avif"
+                    srcset="assets/img/hero/hero5-w768.avif 768w, assets/img/hero/hero5-w1280.avif 1280w, assets/img/hero/hero5-w1920.avif 1920w"
+                    sizes="100vw">
+                <source type="image/webp"
+                    srcset="assets/img/hero/hero5-w768.webp 768w, assets/img/hero/hero5-w1280.webp 1280w, assets/img/hero/hero5-w1920.webp 1920w"
+                    sizes="100vw">
+                <img src="assets/img/hero/hero5-w1280.webp"
+                    fetchpriority="high" loading="eager" decoding="async"
+                    width="1920" height="1080"
+                    alt="Tableros CCM modulares industriales fabricados por Power Control Paraguay">
+            </picture>
             <img class="hero-bg-slide" src="assets/img/hero/hero6.webp" loading="lazy" decoding="async" width="1920" height="1080" alt="Embolsadora de Big Bag autotransportada en planta industrial">
             <img class="hero-bg-slide" src="assets/img/hero/hero1.webp" loading="lazy" decoding="async" width="1920" height="1080" alt="Servicios eléctricos industriales en planta en Paraguay">
             <img class="hero-bg-slide" src="assets/img/hero/hero2.webp" loading="lazy" decoding="async" width="1920" height="1080" alt="Automatización industrial y control de procesos">
@@ -570,7 +590,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="projects-grid">
             <article class="project-card">
-                <img src="assets/img/trabajos/1.webp" loading="lazy" alt="Comisionamiento de extrusora en Grupo KF">
+                <img src="assets/img/trabajos/1.webp" loading="lazy" decoding="async" width="1200" height="800" alt="Comisionamiento de extrusora en Grupo KF">
                 <div class="project-body">
                     <h3>Comisionamiento de extrusora</h3>
                     <p class="project-meta">Grupo KF · Industria plástica</p>
@@ -578,7 +598,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </article>
             <article class="project-card">
-                <img src="assets/img/trabajos/11.webp" loading="lazy" alt="Línea de terciado en Tierra Linda">
+                <img src="assets/img/trabajos/11.webp" loading="lazy" decoding="async" width="1200" height="800" alt="Línea de terciado en Tierra Linda">
                 <div class="project-body">
                     <h3>Línea de producción de terciado</h3>
                     <p class="project-meta">Tierra Linda · Maderera</p>
@@ -586,7 +606,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </article>
             <article class="project-card">
-                <img src="assets/img/trabajos/13.webp" loading="lazy" alt="Servomotor y servodrive en ROTESMA">
+                <img src="assets/img/trabajos/13.webp" loading="lazy" decoding="async" width="1200" height="800" alt="Servomotor y servodrive en ROTESMA">
                 <div class="project-body">
                     <h3>Servomotor y servodrive</h3>
                     <p class="project-meta">ROTESMA · Metalúrgica</p>
@@ -594,7 +614,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </article>
             <article class="project-card">
-                <img src="assets/img/trabajos/10.webp" loading="lazy" alt="Servicio eléctrico naval en remolcador">
+                <img src="assets/img/trabajos/10.webp" loading="lazy" decoding="async" width="1200" height="800" alt="Servicio eléctrico naval en remolcador">
                 <div class="project-body">
                     <h3>Servicio eléctrico naval</h3>
                     <p class="project-meta">Remolcador · Sector naval</p>
@@ -621,82 +641,82 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="clients-track">
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/logo_pajarito.webp" alt="Yerba Mate Pajarito">
+                            <img src="assets/img/client_logo/logo_pajarito.webp" alt="Yerba Mate Pajarito" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/2.webp" alt="Blascor Pinturas">
+                            <img src="assets/img/client_logo/2.webp" alt="Blascor Pinturas" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/logo_mtd.webp" alt="MTD S.A.">
+                            <img src="assets/img/client_logo/logo_mtd.webp" alt="MTD S.A." width="480" height="199" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/11.webp" alt="TEYSA S.R.L.">
+                            <img src="assets/img/client_logo/11.webp" alt="TEYSA S.R.L." width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/7.webp" alt="Grupo KF">
+                            <img src="assets/img/client_logo/7.webp" alt="Grupo KF" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/1.webp" alt="Mega Plásticos">
+                            <img src="assets/img/client_logo/1.webp" alt="Mega Plásticos" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/5.webp" alt="Sol Tintas S.A.">
+                            <img src="assets/img/client_logo/5.webp" alt="Sol Tintas S.A." width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/8.webp" alt="SuperPlast">
+                            <img src="assets/img/client_logo/8.webp" alt="SuperPlast" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/6.webp" alt="Plastech">
+                            <img src="assets/img/client_logo/6.webp" alt="Plastech" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/iapp.webp" alt="IAPP">
+                            <img src="assets/img/client_logo/iapp.webp" alt="IAPP" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/sc-hierros.webp" alt="SC Hierros">
+                            <img src="assets/img/client_logo/sc-hierros.webp" alt="SC Hierros" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/rotesma.webp" alt="Rotesma">
+                            <img src="assets/img/client_logo/rotesma.webp" alt="Rotesma" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/4.webp" alt="Edificio VanDan">
+                            <img src="assets/img/client_logo/4.webp" alt="Edificio VanDan" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/3.webp" alt="Hotel Dazzler">
+                            <img src="assets/img/client_logo/3.webp" alt="Hotel Dazzler" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/LOOGO_letmar.webp" alt="Letmar Paraguay S.A.">
+                            <img src="assets/img/client_logo/LOOGO_letmar.webp" alt="Letmar Paraguay S.A." width="240" height="120" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="client-slide">
                         <div class="client-logo-card">
-                            <img src="assets/img/client_logo/LOGO_FLUXO.webp" alt="Fluxo Industrial">
+                            <img src="assets/img/client_logo/LOGO_FLUXO.webp" alt="Fluxo Industrial" width="240" height="240" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -767,9 +787,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </p>
             </div>
             <div class="coverage-map">
-                <iframe title="Ubicación Power Control Paraguay"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-facade" role="button" tabindex="0"
+                    aria-label="Cargar mapa de ubicación de Power Control Paraguay"
+                    data-map-title="Ubicación Power Control Paraguay"
+                    data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy">
+                    <span class="map-facade-label">Ver mapa interactivo</span>
+                </div>
             </div>
         </div>
     </section>
@@ -894,10 +917,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="footer-column map-section">
                 <h4 class="footer-title">Ubicación</h4>
                 <div class="footer-map">
-        
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy" 
-                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                    <div class="map-facade map-facade--footer" role="button" tabindex="0"
+                        aria-label="Cargar mapa de ubicación"
+                        data-map-title="Mapa Power Control Paraguay"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d217.47788341708235!2d-54.65025968428409!3d-25.485881974366798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2spy!4v1739712463088!5m2!1ses-419!2spy">
+                        <span class="map-facade-label">Ver mapa</span>
+                    </div>
                 </div>
             </div>
     
@@ -925,10 +950,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
-    <script src="assets/js/script-carrusel.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/hero.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/analytics-events.js"></script>
+    <script src="assets/js/script-carrusel.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/hero.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/map-facade.js" defer></script>
+    <script src="assets/js/analytics-events.js" defer></script>
 </body>
 </html>

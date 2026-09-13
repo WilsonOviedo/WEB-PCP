@@ -28,6 +28,7 @@ body {
 .logo img {
     height: 80px; /* Ajusta este valor según el tamaño que necesites */
     width: auto;
+    aspect-ratio: 4 / 1;
 }
 
 /* En el media query para móviles, puedes ajustar el tamaño si lo necesitas */
@@ -367,6 +368,58 @@ body {
     filter: grayscale(25%) contrast(1.05);
 }
 
+.map-facade {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+        #1a1a1a;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+.map-facade:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--yellow);
+}
+
+.map-facade-label {
+    display: inline-block;
+    padding: 0.7rem 1.1rem;
+    border: 1px solid rgba(247, 223, 0, 0.55);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.45);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+}
+
+.map-facade.is-loaded {
+    cursor: default;
+    background: transparent;
+}
+
+.map-facade.is-loaded .map-facade-label {
+    display: none;
+}
+
+.map-facade iframe {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    border: 0;
+    display: block;
+}
+
+.map-facade--footer {
+    min-height: 150px;
+}
+
 @media (max-width: 768px) {
     .coverage-inner {
         grid-template-columns: 1fr;
@@ -374,8 +427,13 @@ body {
     }
 
     .coverage-map,
-    .coverage-map iframe {
+    .coverage-map iframe,
+    .map-facade {
         min-height: 260px;
+    }
+
+    .map-facade--footer {
+        min-height: 200px;
     }
 }
 
@@ -434,6 +492,7 @@ body {
 .project-card img {
     width: 100%;
     height: 190px;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
 }
 
@@ -747,9 +806,17 @@ body {
     background-color: #050505;
 }
 
-.hero-background img {
+.hero-background img,
+.hero-background picture {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
+}
+
+.hero-background picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1039,5 +1106,15 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
     .client-slide {
         flex-basis: 25%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-bg-slide,
+    .client-logo-card,
+    .client-logo-card img,
+    .service-card,
+    .gallery-item img {
+        transition: none !important;
     }
 }
