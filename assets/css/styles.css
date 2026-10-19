@@ -618,27 +618,91 @@ body {
 
 
 
-/* WhatsApp Button */
-.whatsapp-btn {
+/* WhatsApp widget (menú Proyectos / Ventas) */
+.whatsapp-widget {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.whatsapp-menu {
+    width: min(260px, calc(100vw - 2.5rem));
+    background: #111;
+    border: 1px solid rgba(247, 223, 0, 0.25);
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.whatsapp-menu[hidden] {
+    display: none !important;
+}
+
+.whatsapp-menu-title {
+    margin: 0 0 0.15rem;
+    padding: 0 0.25rem;
+    font-size: 0.8rem;
+    color: #cfcfcf;
+}
+
+.whatsapp-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    text-decoration: none;
+    color: #fff;
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-menu-item:hover,
+.whatsapp-menu-item:focus-visible {
+    background: #222;
+    border-color: rgba(37, 211, 102, 0.55);
+    outline: none;
+}
+
+.whatsapp-menu-item strong {
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.whatsapp-menu-item span {
+    font-size: 0.8rem;
+    color: #bdbdbd;
+}
+
+.whatsapp-btn {
     background-color: #25d366;
     color: var(--white);
     width: 60px;
     height: 60px;
+    border: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     text-decoration: none;
+    cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.whatsapp-btn:hover {
-    transform: scale(1.1);
+.whatsapp-btn:hover,
+.whatsapp-widget.is-open .whatsapp-btn {
+    transform: scale(1.08);
 }
 
 /* Formulario de contacto */

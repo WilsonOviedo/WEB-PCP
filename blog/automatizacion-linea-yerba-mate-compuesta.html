@@ -189,9 +189,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
-    <a href="https://wa.me/595973623941" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <div class="whatsapp-widget">
+        <div class="whatsapp-menu" id="whatsapp-menu" hidden>
+            <p class="whatsapp-menu-title">¿Con quién hablás?</p>
+            <a href="https://wa.me/595973623941?text=Hola%2C%20quiero%20consultar%20sobre%20un%20proyecto"
+               class="whatsapp-menu-item" target="_blank" rel="noopener">
+                <strong>Proyectos</strong>
+                <span>+595 973 623 941</span>
+            </a>
+            <a href="https://wa.me/595974126305?text=Hola%2C%20quiero%20hablar%20con%20Ventas"
+               class="whatsapp-menu-item" target="_blank" rel="noopener">
+                <strong>Ventas</strong>
+                <span>+595 974 126 305</span>
+            </a>
+        </div>
+        <button type="button" class="whatsapp-btn" aria-expanded="false" aria-controls="whatsapp-menu" aria-label="Abrir menú de WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </button>
+    </div>
     <script src="../assets/js/menu.js" defer></script>
     <script src="../assets/js/header.js" defer></script>
+    <script src="../assets/js/whatsapp-menu.js" defer></script>
     <script src="../assets/js/analytics-events.js" defer></script>
 </body>
 </html>
