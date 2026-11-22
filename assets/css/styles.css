@@ -9,7 +9,9 @@
     --text-muted: #c8c8c8;
     /* secciones intercaladas */
     --section-solid: #050505;
-    --section-glass: rgba(255, 255, 255, 0.045);
+    --section-glass: #f7df00;
+    --section-glass-text: #111111;
+    --section-glass-muted: rgba(17, 17, 17, 0.72);
     /* superficies / cards */
     --surface: rgba(255, 255, 255, 0.04);
     --surface-card: rgba(0, 0, 0, 0.42);
@@ -163,10 +165,68 @@ section[id],
 
 .section-band--alt {
     background: var(--section-glass);
+    color: var(--section-glass-text);
 }
 
 .section-band--soft {
     background: var(--section-glass);
+    color: var(--section-glass-text);
+}
+
+/* Texto legible sobre bandas amarillas (antes glass oscuro) */
+.section-band--alt .section-title,
+.section-band--soft .section-title,
+.section-band--alt h1,
+.section-band--alt h2,
+.section-band--alt h3,
+.section-band--soft h1,
+.section-band--soft h2,
+.section-band--soft h3,
+.partner-kms .section-title,
+.coverage .section-title,
+.clients .section-title,
+.careers .section-title,
+.sectors .section-title {
+    color: var(--section-glass-text);
+}
+
+.section-band--alt .section-subtitle,
+.section-band--soft .section-subtitle,
+.section-band--alt .section-eyebrow,
+.section-band--soft .section-eyebrow,
+.partner-kms .section-subtitle,
+.coverage .section-subtitle,
+.clients .section-subtitle,
+.careers .section-subtitle,
+.sectors .section-subtitle,
+.partner-kms-lead,
+.coverage-lead,
+.careers-header p,
+.careers-cta-text,
+.careers-privacy-note {
+    color: var(--section-glass-muted);
+}
+
+.section-band--alt .coverage-eyebrow,
+.partner-kms-eyebrow,
+.coverage-eyebrow,
+.careers-header .coverage-eyebrow,
+.sectors .coverage-eyebrow {
+    color: var(--section-glass-text);
+}
+
+.partner-kms,
+.coverage,
+.clients,
+.careers,
+.sectors {
+    color: var(--section-glass-text);
+}
+
+.careers-privacy-note a,
+.careers-cta-text a {
+    color: #111;
+    font-weight: 700;
 }
 
 .services-grid {
@@ -348,7 +408,7 @@ section[id],
 }
 
 .partner-kms-eyebrow {
-    color: var(--yellow);
+    color: var(--section-glass-text);
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -358,17 +418,19 @@ section[id],
 
 .partner-kms .section-title {
     margin-bottom: 1rem;
+    color: var(--section-glass-text);
 }
 
 .partner-kms-lead {
-    color: var(--text-muted);
+    color: var(--section-glass-muted);
     line-height: 1.7;
     margin-bottom: 2rem;
 }
 
 .partner-kms-lead a {
-    color: var(--yellow);
-    font-weight: 600;
+    color: var(--section-glass-text);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .partner-kms-panel {
@@ -440,9 +502,9 @@ section[id],
 }
 
 .partner-kms-ext {
-    color: var(--yellow);
+    color: var(--section-glass-text);
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .partner-kms-ext:hover {
@@ -511,7 +573,7 @@ section[id],
 }
 
 .coverage-eyebrow {
-    color: var(--yellow);
+    color: var(--section-glass-text);
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -522,10 +584,11 @@ section[id],
 .coverage-copy .section-title {
     text-align: left;
     margin-bottom: 1rem;
+    color: var(--section-glass-text);
 }
 
 .coverage-lead {
-    color: var(--text-muted);
+    color: var(--section-glass-muted);
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.75rem;
@@ -552,7 +615,7 @@ section[id],
 }
 
 .coverage-note {
-    color: var(--text-muted);
+    color: var(--section-glass-muted);
     font-size: 0.88rem;
     letter-spacing: 0.04em;
 }
@@ -759,11 +822,11 @@ section[id],
 }
 
 .clients .section-title {
-    color: var(--white);
+    color: var(--section-glass-text);
 }
 
 .clients .section-subtitle {
-    color: var(--text-muted);
+    color: var(--section-glass-muted);
 }
 
 .clients-carousel {
@@ -960,10 +1023,15 @@ section[id],
 
 .careers-header .section-title {
     margin-bottom: 0.75rem;
+    color: var(--section-glass-text);
+}
+
+.careers-header .coverage-eyebrow {
+    color: var(--section-glass-text);
 }
 
 .careers-lead {
-    color: var(--text-muted);
+    color: var(--section-glass-muted);
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -1219,6 +1287,20 @@ section[id],
     padding: 5.5rem 1.5rem;
     background: var(--section-glass);
     border: none;
+    color: var(--section-glass-text);
+}
+
+.sectors .section-title {
+    color: var(--section-glass-text);
+}
+
+.sectors .section-subtitle,
+.sectors .coverage-eyebrow {
+    color: var(--section-glass-muted);
+}
+
+.sectors .coverage-eyebrow {
+    color: var(--section-glass-text);
 }
 
 .sectors-grid {
@@ -1710,4 +1792,46 @@ section[id],
     .gallery-item img {
         transition: none !important;
     }
+}
+
+/* Texto negro sobre secciones amarillas (vence el color blanco global de títulos) */
+.partner-kms .section-title,
+.partner-kms-eyebrow,
+.coverage .section-title,
+.coverage-eyebrow,
+.clients .section-title,
+.careers .section-title,
+.careers-header .coverage-eyebrow,
+.sectors .section-title,
+.sectors .coverage-eyebrow,
+.section-band--alt .section-title,
+.section-band--alt .section-eyebrow,
+.section-band--soft .section-title,
+.section-band--soft .section-eyebrow,
+.gallery-related-section .section-title,
+.gallery-related-section .section-eyebrow {
+    color: #111 !important;
+}
+
+.partner-kms-lead,
+.partner-kms-lead a,
+.partner-kms-ext,
+.coverage-lead,
+.coverage-note,
+.clients .section-subtitle,
+.careers-lead,
+.careers-privacy-note,
+.careers-privacy-note a,
+.sectors .section-subtitle,
+.section-band--alt .section-subtitle,
+.section-band--soft .section-subtitle,
+.gallery-related-section .section-subtitle {
+    color: rgba(17, 17, 17, 0.78) !important;
+}
+
+.partner-kms-lead a,
+.partner-kms-ext,
+.careers-privacy-note a {
+    color: #111 !important;
+    font-weight: 700;
 }

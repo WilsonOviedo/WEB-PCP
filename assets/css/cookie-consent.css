@@ -6,10 +6,10 @@
     bottom: 0;
     z-index: 12000;
     padding: 1rem;
-    background: rgba(5, 5, 5, 0.96);
-    border-top: 1px solid rgba(247, 223, 0, 0.2);
-    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.45);
-    color: #fff;
+    background: var(--yellow, #f7df00);
+    border-top: none;
+    box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.18);
+    color: #111;
     font-family: var(--font-body, "Montserrat", sans-serif);
 }
 
@@ -43,11 +43,14 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.45;
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(17, 17, 17, 0.88);
 }
 
 .pcp-cookie-banner__copy a {
-    color: var(--yellow, #f7df00);
+    color: #111;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .pcp-cookie-banner__actions {
@@ -59,31 +62,34 @@
 
 .pcp-cookie-btn {
     appearance: none;
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    background: rgba(255, 255, 255, 0.06);
-    color: #fff;
+    border: 2px solid #111;
+    background: transparent;
+    color: #111;
     font: inherit;
     font-size: 0.88rem;
     font-weight: 600;
     padding: 0.65rem 0.95rem;
-    border-radius: 8px;
+    border-radius: 999px;
     cursor: pointer;
     min-width: 9.5rem;
     text-align: center;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.pcp-cookie-btn:hover,
-.pcp-cookie-btn--primary:hover {
-    border-color: var(--yellow, #f7df00);
-    color: var(--yellow, #f7df00);
-    background: rgba(247, 223, 0, 0.08);
+.pcp-cookie-btn:hover {
+    background: rgba(0, 0, 0, 0.08);
 }
 
-/* Mismo peso visual que el resto; la clase primary se mantiene por semántica */
+/* Mismo peso visual; uno sólido negro / otros outline sobre amarillo */
 .pcp-cookie-btn--primary {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.45);
+    background: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+.pcp-cookie-btn--primary:hover {
+    background: #000;
+    border-color: #000;
     color: #fff;
 }
 
@@ -101,9 +107,9 @@
 .pcp-cookie-modal__panel {
     position: relative;
     width: min(520px, 100%);
-    background: #111;
-    color: #fff;
-    border: 1px solid rgba(247, 223, 0, 0.18);
+    background: var(--yellow, #f7df00);
+    color: #111;
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 14px;
     padding: 1.5rem 1.35rem 1.25rem;
     font-family: var(--font-body, "Montserrat", sans-serif);
@@ -113,12 +119,13 @@
     margin: 0 0 0.5rem;
     font-family: var(--font-display, "Poppins", sans-serif);
     font-size: 1.25rem;
+    color: #111;
 }
 
 .pcp-cookie-modal__panel > p {
     margin: 0 0 1rem;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.82);
+    color: rgba(17, 17, 17, 0.82);
 }
 
 .pcp-cookie-modal__close {
@@ -127,7 +134,7 @@
     right: 0.7rem;
     border: 0;
     background: transparent;
-    color: #fff;
+    color: #111;
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
@@ -138,23 +145,24 @@
     gap: 0.75rem;
     align-items: flex-start;
     padding: 0.75rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     font-size: 0.9rem;
     cursor: pointer;
 }
 
 .pcp-cookie-option input {
     margin-top: 0.2rem;
-    accent-color: var(--yellow, #f7df00);
+    accent-color: #111;
 }
 
 .pcp-cookie-option strong {
     display: block;
+    color: #111;
 }
 
 .pcp-cookie-option small {
     display: block;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(17, 17, 17, 0.72);
     margin-top: 0.2rem;
     line-height: 1.35;
 }
@@ -169,11 +177,12 @@
 .pcp-cookie-modal__links {
     margin: 1rem 0 0;
     font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(17, 17, 17, 0.7);
 }
 
 .pcp-cookie-modal__links a {
-    color: var(--yellow, #f7df00);
+    color: #111;
+    font-weight: 700;
 }
 
 .footer-legal {
