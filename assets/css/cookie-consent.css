@@ -1,0 +1,245 @@
+/* Banner y modal de cookies — Power Control Paraguay */
+.pcp-cookie-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 12000;
+    padding: 1rem;
+    background: rgba(5, 5, 5, 0.96);
+    border-top: 1px solid rgba(247, 223, 0, 0.2);
+    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-family: var(--font-body, "Montserrat", sans-serif);
+}
+
+.pcp-cookie-banner[hidden],
+.pcp-cookie-modal[hidden] {
+    display: none !important;
+}
+
+.pcp-cookie-banner__inner {
+    width: min(960px, 92%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pcp-cookie-banner__copy {
+    flex: 1 1 280px;
+}
+
+.pcp-cookie-banner__copy strong {
+    display: block;
+    font-family: var(--font-display, "Poppins", sans-serif);
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+}
+
+.pcp-cookie-banner__copy p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.pcp-cookie-banner__copy a {
+    color: var(--yellow, #f7df00);
+}
+
+.pcp-cookie-banner__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    flex: 0 1 auto;
+}
+
+.pcp-cookie-btn {
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.65rem 0.95rem;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 9.5rem;
+    text-align: center;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.pcp-cookie-btn:hover,
+.pcp-cookie-btn--primary:hover {
+    border-color: var(--yellow, #f7df00);
+    color: var(--yellow, #f7df00);
+    background: rgba(247, 223, 0, 0.08);
+}
+
+/* Mismo peso visual que el resto; la clase primary se mantiene por semántica */
+.pcp-cookie-btn--primary {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.45);
+    color: #fff;
+}
+
+.pcp-cookie-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 12010;
+    background: rgba(0, 0, 0, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.pcp-cookie-modal__panel {
+    position: relative;
+    width: min(520px, 100%);
+    background: #111;
+    color: #fff;
+    border: 1px solid rgba(247, 223, 0, 0.18);
+    border-radius: 14px;
+    padding: 1.5rem 1.35rem 1.25rem;
+    font-family: var(--font-body, "Montserrat", sans-serif);
+}
+
+.pcp-cookie-modal__panel h2 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-display, "Poppins", sans-serif);
+    font-size: 1.25rem;
+}
+
+.pcp-cookie-modal__panel > p {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.pcp-cookie-modal__close {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.7rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.pcp-cookie-option {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.pcp-cookie-option input {
+    margin-top: 0.2rem;
+    accent-color: var(--yellow, #f7df00);
+}
+
+.pcp-cookie-option strong {
+    display: block;
+}
+
+.pcp-cookie-option small {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.2rem;
+    line-height: 1.35;
+}
+
+.pcp-cookie-modal__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
+}
+
+.pcp-cookie-modal__links {
+    margin: 1rem 0 0;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pcp-cookie-modal__links a {
+    color: var(--yellow, #f7df00);
+}
+
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1.1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.85rem;
+}
+
+.footer-legal a,
+.footer-cookie-settings {
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    font-size: 0.8rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.footer-legal a:hover,
+.footer-cookie-settings:hover {
+    color: var(--yellow, #f7df00);
+}
+
+.form-consent {
+    display: flex;
+    gap: 0.65rem;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0.85rem 0 1rem;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-consent input {
+    margin-top: 0.2rem;
+    accent-color: var(--yellow, #f7df00);
+    flex-shrink: 0;
+}
+
+.form-consent a {
+    color: var(--yellow, #f7df00);
+}
+
+.careers-privacy-note {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.careers-privacy-note a {
+    color: var(--yellow, #f7df00);
+}
+
+@media (max-width: 640px) {
+    .pcp-cookie-btn {
+        min-width: calc(50% - 0.3rem);
+        flex: 1 1 calc(50% - 0.3rem);
+    }
+
+    .pcp-cookie-banner__actions .pcp-cookie-btn:last-child {
+        flex-basis: 100%;
+    }
+}

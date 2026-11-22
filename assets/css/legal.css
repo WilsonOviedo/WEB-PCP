@@ -1,0 +1,68 @@
+/* Páginas legales — borrador editorial */
+.legal-page {
+    width: var(--content-width, 80%);
+    max-width: none;
+    margin: 0 auto;
+    padding: 6.5rem 0 4rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.legal-page .article-breadcrumb {
+    margin-bottom: 1rem;
+}
+
+.legal-page h1 {
+    font-family: var(--font-display, "Poppins", sans-serif);
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    margin: 0 0 0.5rem;
+    color: #fff;
+}
+
+.legal-meta {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    margin-bottom: 1.75rem;
+}
+
+.legal-draft-note {
+    margin: 0 0 1.75rem;
+    padding: 0.9rem 1rem;
+    border-left: 3px solid var(--yellow, #f7df00);
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.legal-content h2 {
+    font-family: var(--font-display, "Poppins", sans-serif);
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    color: #fff;
+}
+
+.legal-content h3 {
+    font-size: 1.05rem;
+    margin: 1.35rem 0 0.5rem;
+    color: #fff;
+}
+
+.legal-content p,
+.legal-content li {
+    line-height: 1.65;
+    font-size: 0.98rem;
+}
+
+.legal-content ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.legal-content a {
+    color: var(--yellow, #f7df00);
+}
+
+.legal-content .legal-marker {
+    background: rgba(247, 223, 0, 0.12);
+    padding: 0.05rem 0.25rem;
+    border-radius: 4px;
+}

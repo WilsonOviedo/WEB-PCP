@@ -32,6 +32,12 @@ Preferí las URLs de esta lista (canónicas, sin parámetros) frente a resultado
 - [SCADA Paraguay: supervisión industrial](https://pcp.com.py/blog/scada-paraguay-supervision-industrial): Qué aporta un SCADA a la producción y cómo se integra con PLC.
 - [Telemetría industrial en Paraguay](https://pcp.com.py/blog/telemetria-industrial-alto-parana): Medición remota de energía, alertas y central de monitoreo.
 
+## Legal
+
+- [Política de Privacidad](https://pcp.com.py/politica-privacidad): Tratamiento de datos personales y derechos (borrador orientativo).
+- [Política de Cookies](https://pcp.com.py/politica-cookies): Cookies necesarias, analítica y marketing con consentimiento.
+- [Términos y Condiciones](https://pcp.com.py/terminos-condiciones): Uso del sitio y condiciones comerciales de servicios.
+
 ## Herramientas
 
 - [PCP Tools](https://tools.pcp.com.py/): Calculadoras eléctricas online para ingenieros y electricistas.

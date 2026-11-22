@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M98RFMP4');</script>
-<!-- End Google Tag Manager -->
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
 
-<!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '765233952276065');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=765233952276065&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de proyectos industriales Paraguay | Power Control</title>
     <meta name="description" 
         content="Galería de proyectos de automatización, PLC, SCADA, telemetría y servicios eléctricos en Paraguay.">
@@ -43,9 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="geo.placename" content="Alto Paraná">
     
     <link rel="canonical" href="https://pcp.com.py/galeria" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-	<meta property="og:locale" content="es_PY" />
+<meta property="og:locale" content="es_PY" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Galería de proyectos industriales | Power Control Paraguay"/>
 	<meta property="og:description" content="Proyectos de automatización, telemetría y servicios eléctricos en Paraguay." />
@@ -63,6 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/cookie-consent.css">
     <link rel="stylesheet" href="assets/css/galeria.css">
     <script type="application/ld+json">
     {
@@ -81,12 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M98RFMP4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <header>
+<header>
         <div class="nav-container">
             <div class="logo">
                 <a href="/"><img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay Logo" width="500" height="125" decoding="async"></a>
@@ -218,29 +186,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="assets/img/trabajos/26.webp" alt="Fabricación de tablero automatizado para linea de carga de pinturas en Sol Tintas S.A" data-index="25" loading="lazy" width="800" height="800">
                 <div class="image-description">Fabricación de tablero automatizado para linea de carga de pinturas en Sol Tintas S.A.</div>
             </div>
-
-    
-        <div class="gallery-related" style="width:80%;margin:2.5rem auto 0;padding:0;text-align:center;">
-            <h2 style="color:#fff;font-size:1.25rem;margin-bottom:0.75rem;">Servicios relacionados</h2>
-            <p style="display:flex;flex-wrap:wrap;gap:0.75rem 1.25rem;justify-content:center;">
-                <a href="/automatizacion-industrial" style="color:#f7df00;">Automatización industrial</a>
-                <a href="/programacion-plc-hmi" style="color:#f7df00;">Programación PLC y HMI</a>
-                <a href="/tableros-electricos-industriales" style="color:#f7df00;">Tableros eléctricos</a>
-                <a href="/proyectos-electricos-industriales" style="color:#f7df00;">Proyectos eléctricos</a>
-                <a href="/mantenimiento-electrico-industrial" style="color:#f7df00;">Mantenimiento eléctrico</a>
-                <a href="/telemetria-industrial" style="color:#f7df00;">Telemetría industrial</a>
-            </p>
         </div>
 
         <!-- Ventana modal -->
         <div class="modal" id="modal">
             <span class="close" id="close-modal">&times;</span>
             <img class="modal-content" id="modal-image">
-            <p class="modal-description" id="modal-description"></p> <!-- Pie de foto en la modal -->
+            <p class="modal-description" id="modal-description"></p>
             <button class="modal-btn prev-btn" id="prev-btn">❮</button>
             <button class="modal-btn next-btn" id="next-btn">❯</button>
         </div>
     </main>
+
+    <section class="gallery-related-section section-band section-band--alt" aria-labelledby="gallery-related-title">
+        <div class="gallery-related">
+            <div class="section-header">
+                <p class="section-eyebrow">Servicios</p>
+                <h2 id="gallery-related-title" class="section-title">Servicios relacionados</h2>
+                <p class="section-subtitle">Explorá las soluciones detrás de estos proyectos industriales.</p>
+            </div>
+            <div class="gallery-related-links">
+                <a href="/automatizacion-industrial">Automatización industrial</a>
+                <a href="/programacion-plc-hmi">Programación PLC y HMI</a>
+                <a href="/tableros-electricos-industriales">Tableros eléctricos</a>
+                <a href="/proyectos-electricos-industriales">Proyectos eléctricos</a>
+                <a href="/mantenimiento-electrico-industrial">Mantenimiento eléctrico</a>
+                <a href="/telemetria-industrial">Telemetría industrial</a>
+            </div>
+        </div>
+    </section>
 
     <div class="whatsapp-widget">
         <div class="whatsapp-menu" id="whatsapp-menu" hidden>
@@ -306,6 +280,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Pie de página -->
         <div class="footer-bottom">
             <p>© 2026 Power Control Paraguay. Todos los derechos reservados.</p>
+                    <nav class="footer-legal" aria-label="Información legal">
+                <a href="/politica-privacidad">Política de Privacidad</a>
+                <a href="/politica-cookies">Política de Cookies</a>
+                <a href="/terminos-condiciones">Términos y Condiciones</a>
+                <button type="button" class="footer-cookie-settings" data-cookie-settings>Configurar cookies</button>
+            </nav>
         </div>
     </footer>
 
@@ -315,5 +295,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/map-facade.js" defer></script>
     <script src="assets/js/whatsapp-menu.js" defer></script>
     <script src="assets/js/analytics-events.js" defer></script>
+    <script src="assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M98RFMP4');</script>
-<!-- End Google Tag Manager -->
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
 
-<!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '765233952276065');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=765233952276065&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automatización Industrial e Ingeniería Eléctrica en Paraguay | PCP</title>
     <meta name="description"
         content="Power Control Paraguay: proyectos eléctricos, PLC, HMI, SCADA, tableros, telemetría y mantenimiento industrial en Paraguay. Base en Ciudad del Este.">
@@ -45,10 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="ICBM" content="-25.485882, -54.650260">
     
     <link rel="canonical" href="https://pcp.com.py/" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-    <link rel="dns-prefetch" href="https://connect.facebook.net">
     <link rel="preload" as="image"
           href="assets/img/hero/hero5-w1280.avif"
           imagesrcset="assets/img/hero/hero5-w768.avif 768w, assets/img/hero/hero5-w1280.avif 1280w, assets/img/hero/hero5-w1920.avif 1920w"
@@ -320,16 +290,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/sobre-nosotros.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/cookie-consent.css">
     <link rel="stylesheet" href="assets/css/blog.css">
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M98RFMP4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <header>
+<header>
         <div class="nav-container">
             <div class="logo">
                 <img src="assets/img/logo/logo-pcp- 500x125.png" alt="Power Control Paraguay Logo" width="500" height="125" decoding="async">
@@ -922,6 +888,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="mailto:talento@pcp.com.py">talento@pcp.com.py</a>
                         con tu curriculum en PDF y una breve presentación de tu perfil.
                     </p>
+                    <p class="careers-privacy-note">
+                        Al enviar tu CV aceptás el tratamiento de tus datos para procesos de selección,
+                        según la <a href="/politica-privacidad">Política de Privacidad</a>.
+                    </p>
                 </div>
                 <a class="btn btn-primary careers-cta-btn"
                    href="mailto:talento@pcp.com.py?subject=Postulaci%C3%B3n%20-%20CV%20Power%20Control%20Paraguay&body=Hola%2C%20adjunto%20mi%20CV%20para%20considerar%20mi%20postulaci%C3%B3n.%0A%0ANombre%3A%0APerfil%20%2F%20especialidad%3A%0ATel%C3%A9fono%3A%0A">
@@ -954,6 +924,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <label for="mensaje">Contanos brevemente qué necesitás</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             </div>
+            <label class="form-consent">
+                <input type="checkbox" name="acepto_privacidad" value="si" required>
+                <span>He leído y acepto la <a href="/politica-privacidad" target="_blank" rel="noopener">Política de Privacidad</a> y autorizo el tratamiento de mis datos para responder esta consulta.</span>
+            </label>
             <button type="submit">Enviar mensaje</button>
         </form>
         <div id="mensaje-exito" style="display:none; color: var(--yellow); text-align:center; font-size:1.2rem; margin-top:1rem;">
@@ -974,9 +948,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 'Accept': 'application/json'
             }
         });
-     
+
+        if (typeof fbq === 'function') {
             fbq('track', 'Lead');
-        
+        }
+
         form.style.display = 'none';
         document.getElementById('mensaje-exito').style.display = 'block';
     });
@@ -1049,6 +1025,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-bottom">
             <p>© 2026 Power Control Paraguay. Todos los derechos reservados.</p>
             <p>Desarrollado por: Equipo de desarrollo Power Control Paraguay.</p>
+            <nav class="footer-legal" aria-label="Información legal">
+                <a href="/politica-privacidad">Política de Privacidad</a>
+                <a href="/politica-cookies">Política de Cookies</a>
+                <a href="/terminos-condiciones">Términos y Condiciones</a>
+                <button type="button" class="footer-cookie-settings" data-cookie-settings>Configurar cookies</button>
+            </nav>
         </div>
     </footer>
 
@@ -1059,5 +1041,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/map-facade.js" defer></script>
     <script src="assets/js/whatsapp-menu.js" defer></script>
     <script src="assets/js/analytics-events.js" defer></script>
+    <script src="assets/js/cookie-consent.js" defer></script>
 </body>
 </html>
