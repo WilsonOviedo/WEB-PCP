@@ -1,9 +1,12 @@
 /* Estilos para la galería */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas en escritorio */
-    gap: 15px; /* Espacio entre imágenes */
-    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: var(--content-width, 80%);
+    max-width: none;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .gallery-item {

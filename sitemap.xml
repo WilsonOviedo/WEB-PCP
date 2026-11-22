@@ -56,6 +56,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pcp.com.py/blog/embolsadora-bigbag-semiautonoma-agromani</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://pcp.com.py/blog/embolsadora-peso-bruto-chia-alimentos-mora-cue</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://pcp.com.py/blog/automatizacion-linea-yerba-mate-compuesta</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

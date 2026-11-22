@@ -1,20 +1,25 @@
-/*Animacion Menu*/
+/* Menú fijo — solo el header del sitio (no .careers-header / .article-header) */
 
-
-/* Estilos generales del menú */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.65rem clamp(1rem, 3vw, 2rem);
-    background-color: #000000;
+body > header {
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 5000;
+    background-color: var(--black, #050505);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+body > header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--content-width, 80%);
+    max-width: none;
+    margin: 0 auto;
+    padding: 0.7rem 0;
+    background-color: transparent;
+    position: relative;
 }
 
 .logo {
@@ -22,7 +27,7 @@
 }
 
 .logo img {
-    height: 42px;
+    height: 44px;
     width: auto;
 }
 
@@ -30,7 +35,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: clamp(0.65rem, 1.8vw, 1.4rem);
+    gap: clamp(0.55rem, 1.6vw, 1.25rem);
     flex: 1;
     margin: 0 0 0 1rem;
     min-width: 0;
@@ -39,76 +44,102 @@
 .nav-menu a {
     color: #ffffff;
     text-decoration: none;
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    font-family: var(--font-body, "Montserrat", sans-serif);
+    font-size: clamp(0.78rem, 1vw, 0.88rem);
     font-weight: 600;
-    transition: color 0.3s ease;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
     white-space: nowrap;
     position: relative;
-    padding: 0.2rem 0.35rem;
+    padding: 0.35rem 0.2rem;
 }
 
 .nav-menu a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -0.6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 14px;
-    background: rgba(255, 255, 255, 0.25);
+    display: none;
 }
 
 .nav-menu a:hover {
-    color: #f7df00;
+    color: var(--yellow, #f7df00);
 }
 
-/* Estilos del botón de menú (ícono de hamburguesa) */
+/* Botón hamburguesa circular */
 .menu-btn {
     display: none;
-    color: #ffffff;
-    font-size: 1.5rem;
+    color: var(--black, #050505);
     cursor: pointer;
+    line-height: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--yellow, #f7df00);
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
-/* Media queries para responsividad */
+.menu-btn:hover {
+    transform: scale(1.05);
+    background: #fff700;
+}
+
+.menu-btn .fa,
+.menu-btn .fas,
+.menu-btn .fab {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+
 @media (max-width: 1024px) {
     .nav-menu {
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
-    
+
     .nav-menu a {
-        font-size: 0.86rem;
-        padding: 0.15rem 0.25rem;
+        font-size: 0.74rem;
+        padding: 0.2rem 0.15rem;
     }
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 0.75rem 1rem;
+    body > header .nav-container {
+        width: var(--content-width, 92%);
+        padding: 0.65rem 0;
     }
-    
+
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 76px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
-        background-color: #000000;
+        height: calc(100vh - 76px);
+        background-color: var(--black, #050505);
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 2rem;
+        align-items: stretch;
+        padding: 1.5rem 1.25rem 2rem;
         transition: left 0.3s ease;
         margin: 0;
+        gap: 0;
+        z-index: 5001;
     }
-    
+
+    .nav-menu a {
+        font-size: 0.95rem;
+        padding: 0.9rem 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .menu-btn {
-        display: block;
+        display: inline-flex;
     }
-    
+
     .logo img {
         height: 36px;
     }

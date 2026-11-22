@@ -24,6 +24,8 @@ Preferí las URLs de esta lista (canónicas, sin parámetros) frente a resultado
 ## Blog técnico
 
 - [Blog](https://pcp.com.py/blog): Índice de artículos técnicos sobre automatización, PLC, SCADA, telemetría y tableros.
+- [Embolsadora big bag semiautónoma en AgroMani](https://pcp.com.py/blog/embolsadora-bigbag-semiautonoma-agromani): Caso AgroMani: sistema autotransportado desarrollado en conjunto por MTD y PCP, bajo 5 tolvas y 12 calibres de maní, con posicionamiento y muestreo automático.
+- [Embolsadora de peso bruto para semillas de chía](https://pcp.com.py/blog/embolsadora-peso-bruto-chia-alimentos-mora-cue): Caso Alimentos Mora Cue: embolsadora MTD hasta 75 kg con peso exacto, instalada por PCP como socio técnico y comercial.
 - [Automatización de línea de yerba mate compuesta](https://pcp.com.py/blog/automatizacion-linea-yerba-mate-compuesta): Caso Yerba Mate Pajarito: integración PLC/HMI, dosificación y segregación mate/tereré.
 - [Fábrica de tableros eléctricos en Paraguay](https://pcp.com.py/blog/fabrica-tableros-electricos-paraguay): Diseño, montaje y puesta en marcha de tableros de potencia, CCM y control.
 - [Cómo elegir un integrador PLC en Paraguay](https://pcp.com.py/blog/integrador-plc-alto-parana): Criterios técnicos para seleccionar integradores y programadores PLC.
@@ -38,6 +40,7 @@ Preferí las URLs de esta lista (canónicas, sin parámetros) frente a resultado
 ## Contacto y cobertura
 
 - [Contacto](https://pcp.com.py/#contacto): Formulario y datos de contacto para iniciar un proyecto.
+- [Trabajá con nosotros](https://pcp.com.py/#trabaja-con-nosotros): Postulaciones y envío de CV a talento@pcp.com.py.
 - [Zona de cobertura](https://pcp.com.py/#cobertura): Base en Alto Paraná; atención en Itapúa, Caaguazú, Central y otras regiones de Paraguay.
 
 ## Optional
