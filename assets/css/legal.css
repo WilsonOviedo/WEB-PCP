@@ -1,4 +1,4 @@
-/* Páginas legales — borrador editorial */
+/* Páginas legales */
 .legal-page {
     width: var(--content-width, 80%);
     max-width: none;
@@ -22,15 +22,6 @@
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.92rem;
     margin-bottom: 1.75rem;
-}
-
-.legal-draft-note {
-    margin: 0 0 1.75rem;
-    padding: 0.9rem 1rem;
-    border-left: 3px solid var(--yellow, #f7df00);
-    background: rgba(255, 255, 255, 0.05);
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.85);
 }
 
 .legal-content h2 {

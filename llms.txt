@@ -34,7 +34,7 @@ Preferí las URLs de esta lista (canónicas, sin parámetros) frente a resultado
 
 ## Legal
 
-- [Política de Privacidad](https://pcp.com.py/politica-privacidad): Tratamiento de datos personales y derechos (borrador orientativo).
+- [Política de Privacidad](https://pcp.com.py/politica-privacidad): Tratamiento de datos personales y derechos.
 - [Política de Cookies](https://pcp.com.py/politica-cookies): Cookies necesarias, analítica y marketing con consentimiento.
 - [Términos y Condiciones](https://pcp.com.py/terminos-condiciones): Uso del sitio y condiciones comerciales de servicios.
 
